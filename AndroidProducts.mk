@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_angler.mk \
-    $(LOCAL_DIR)/omni_angler.mk
+    $(LOCAL_DIR)/exodus_angler.mk

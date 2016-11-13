@@ -1,5 +1,5 @@
-# Inherit omni-specific board config
-include device/huawei/angler/BoardConfigOmni.mk
+# Inherit the Exodus board config
+include device/huawei/angler/BoardConfigExodus.mk
 
 # Inherit base AOSP device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
@@ -8,10 +8,10 @@ $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 $(call inherit-product-if-exists, vendor/huawei/angler/angler-vendor.mk)
 
 # Inherit APNs list
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# $(call inherit-product, vendor/exodus/config/gsm.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/exodus/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 1080x720
@@ -52,8 +52,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.rec_timeout=3500 \
     ro.facelock.est_max_time=600
 
-# Override product naming for Omni
-PRODUCT_NAME := omni_angler
+# Override AOSP product specifics
+PRODUCT_NAME := exodus_angler
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
 PRODUCT_MANUFACTURER := Huawei

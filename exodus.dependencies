@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "kernel_huawei_angler",
+    "target_path": "kernel/huawei/angler"
+  },
+  {
+    "repository": "android_hardware_qcom_camera",
+    "target_path": "hardware/qcom/camera"
+  }
+]
